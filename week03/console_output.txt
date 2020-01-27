@@ -1,0 +1,12 @@
+Script started on 2020-01-27 17:34:09-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="113" LINES="48"]
+ben@pop-os:~$ cd code/sdev415/
+ben@pop-os:~/code/sdev415$ mkdir week03
+ben@pop-os:~/code/sdev415$ cd week03
+ben@pop-os:~/code/sdev415/week03$ touch helloWorld.c
+ben@pop-os:~/code/sdev415/week03$ emacs helloWorld.c 
+ben@pop-os:~/code/sdev415/week03$ gcc helloWorld.c -o helloWorld
+ben@pop-os:~/code/sdev415/week03$ ./helloWorld 
+Hello, World
+ben@pop-os:~/code/sdev415/week03$ exit
+
+Script done on 2020-01-27 17:35:45-05:00 [COMMAND_EXIT_CODE="0"]
