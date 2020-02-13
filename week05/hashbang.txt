@@ -1,0 +1,7 @@
+The first line of the greetme script is called a hashbang, so-called because it
+consists of a hash "#" followed by a bang "!".  When the file has the executable
+flag set, bash will use the path specified here to look for an interpreter to
+run the code.  In this manner you can direct bash to run any suitable
+interpreter implicitly simply by executing the file via bash.  Commonly seen
+languages used this way include "sh", "bash", "sed", "awk", "perl", and "python".
+Most of these will be located in "/usr/bin".

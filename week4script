@@ -1,0 +1,133 @@
+Script started on 2020-02-09 12:27:20-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="113" LINES="48"]
+ben@pop-os:~$ cd ~
+ben@pop-os:~$ mdkir './Linux Programming I'
+ben@pop-os:~$ cd Linux\ Programming\ I/
+ben@pop-os:~/Linux Programming I$ for ((i=1;i<=15;i++)); do mkdir -p ./week$i/assignment; done;
+ben@pop-os:~/Linux Programming I$ ls -al
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek1[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek2[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek3[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek4[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek5[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek6[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek7[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek8[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek9[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek10[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek11[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek12[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek13[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek14[0m
+[1;34md[33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[38;5;244m-[32mx[0m [38;5;244m-[0m [1;33mben[0m [34m 9 Feb 12:28[0m [1;34mweek15[0m
+ben@pop-os:~/Linux Programming I$ emacs ~/.bashrc
+ben@pop-os:~/Linux Programming I$ echo $TERM
+xterm-256color
+ben@pop-os:~/Linux Programming I$ echo $HOME
+/home/ben
+ben@pop-os:~/Linux Programming I$ set -o ignoreeof
+ben@pop-os:~/Linux Programming I$ Use "exit" to leave the shell.
+ben@pop-os:~/Linux Programming I$ man bash > bash-man.txt
+ben@pop-os:~/Linux Programming I$ man csh > csh-man.txt
+ben@pop-os:~/Linux Programming I$ man ksh > korn-man.txt
+ben@pop-os:~/Linux Programming I$ ls /usr/bin > ~/ls_output
+ben@pop-os:~/Linux Programming I$ wc -l ~/ls_output 
+2829 /home/ben/ls_output
+ben@pop-os:~/Linux Programming I$ ls /usr/bin/[K | wc -l
+2829
+ben@pop-os:~/Linux Programming I$ ps aux | wc -l
+319
+ben@pop-os:~/Linux Programming I$ h
+    1  tag_deciduously 3ed9c5f8bc59 latest
+    2  history | grep ssh
+    3  ssh root@157.245.235.199
+    4  gp
+    5  tmux
+    6  make clean
+    7  make docs
+    8  docker push deciduously0/deciduously-com:latest
+    9  npm run docker:build
+   10  tag_deciduously 3ed9c5f8bc59 latest
+   11  history | grep ssh
+   12  ssh root@157.245.235.199
+   13  gp
+   14  tmux
+   15  u
+   16  rup
+   17  br
+   18  cd code/sdev415/
+   19  cd playground/
+   20  cat make_dirs.sh 
+   21  rm -r week*
+   22  for ((i=1;i<=15;i++)); do mkdir -p ./week$1/assignment; done;
+   23  rm -r week/
+   24  ls
+   25  ls week1
+   26  cd ~ && mkdir ./Linux\ Programming\ I && cd ./Linux\ Programming\ I && for ((i=1;i<=15;i++)); do mkdir -p ./week$i/assignment; done; && ls -al
+   27  cd ~ && mkdir './Linux\ Programming\ I' && cd './Linux\ Programming\ I' && for ((i=1;i<=15;i++)); do mkdir -p ./week$i/assignment; done; && ls -al
+   28  mkdir './Linux\ Programming\ I'
+   29  ls Linux\\\ Programming\\\ I/
+   30  cd Linux\\\ Programming\\\ I/
+   31  cd ..
+   32  rm -r Linux\\\ Programming\\\ I/
+   33  rm -r Linux\ Programming\ I/
+   34  mdkir './Linux Programming I'
+   35  printenv | less
+   36  nano ~/.bashrc
+   37  . ~/.bashrc
+   38  exit
+   39  tmux
+   40  exit
+   41  ls Linux\\\ Programming\\\ I/
+   42  cd Linux\\\ Programming\\\ I/
+   43  rm -r Linux\\\ Programming\\\ I/
+   44  rm -r Linux\ Programming\ I/
+   45  mdkir './Linux Programming I'
+   46  printenv | less
+   47  exit
+   48  tmux
+   49  exit
+   50  cd ..
+   51  cd
+   52  echo $PS1
+   53  listlong
+   54  nano ~/.bashrc
+   55  dir
+   56  . ~/.bashrc
+   57  mkdir ‘./Linux Programming I’
+   58  exit
+   59  exit
+   60  exit
+   61  mkdir ‘./Linux Programming I’
+   62  cd
+   63  ls /usr/local/bin> ~/ls_output
+   64  ls /usr/local/bin > ~/ls_output
+   65  ls ls_output 
+   66  cat ls_output 
+   67  ls /usr/local/bin/
+   68  ls /usr//bin/
+   69  exit
+   70  exit
+   71  cd ~
+   72  mkdir './Linux Programming I'
+   73  cd Linux\ Programming\ I/
+   74  for ((i=1;i<=15;i++)); do mkdir -p ./week$i/assignment; done;
+   75  ls -al
+   76  emacs ~/.bashrc
+   77  echo $TERM
+   78  echo $HOME
+   79  set -o ignoreeof
+   80  man bash > bash-man.txt
+   81  man csh > csh-man.txt
+   82  man ksh > korn-man.txt
+   83  ls /usr/bin > ~/ls_output
+   84  wc -l ~/ls_output 
+   85  ls /usr/bin | wc -l
+   86  ps aux | wc -l
+   87  h
+ben@pop-os:~/Linux Programming I$ !84
+wc -l ~/ls_output 
+2829 /home/ben/ls_output
+ben@pop-os:~/Linux Programming I$ exit
+exit
+
+Script done on 2020-02-09 12:30:24-05:00 [COMMAND_EXIT_CODE="0"]

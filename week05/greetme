@@ -1,0 +1,24 @@
+#!/bin/bash
+
+GRIFT_AMT=50
+
+# 1a.
+# Benjamin Lovy
+# February 12, 2020
+# greetme
+# Greet the user, helpfully display some helpful info, beg for an outrageous tip.
+
+# 1b.
+echo "Hi, $USER."
+
+# 1c.
+echo "It's `date +'%T on %A, %B %C, %Y'.`"
+
+# 1d.
+printf "Term: $TERM\nPath: $PATH\nHome: $HOME\n"
+
+# 1e.
+printf "Please, could you loan me $%.2f?\n" $GRIFT_AMT
+
+# 1f.
+echo "Ugh, fine.  Goodbye, $USER."
