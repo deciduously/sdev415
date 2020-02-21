@@ -1,0 +1,21 @@
+1. /Ben(jamin)? (David)? Lovy/
+
+2. /Th[a|e]n/
+
+3. /(yes|no)/
+
+4. /d+f*/
+
+5. /\d\d\d-\d\d-\d\d\d\d/
+
+6. /^Mc[A-Z][a-zA-Z']+/
+
+7. /\w+\.cc?/
+
+8. /^[^eiou]*[^aiou]*[^aeou]*[^aeiu]*[^aeio]*$/  - cool puzzle!  This took a while.
+
+9. /^b\w+b$/
+
+10. Match: xxyy, xy.  No match: yx, xx
+
+11. Match: a, cz.  No match: gz, gg
