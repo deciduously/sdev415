@@ -44,8 +44,11 @@ echo "8:"
 grep -P '[[:upper:]][[:lower:]]+ [Kk][[:alpha:]]+' $FILE
 echo
 # 9. Print lines preceded by a line number where the salary is a six-figure number
+# I got a little stuck here - I don't think I know how to do this with just grep.
+# This fails to match Fred Farbarkle, because while his second line fits the spec,
+# both get dropped with the inverted grep later on.
 echo "9:"
-grep -PA1 '[[:digit:]]{6}$' $FILE | grep -v '[[:digit:]]{6}$'
+grep -PA1 '[[:digit:]]{6}$' $FILE | grep -Pv '[[:digit:]]{6}$'
 echo
 # 10. Print lines containing Lincoln or lincoln (remember that grep is sensitive to case)
 echo "10:"
