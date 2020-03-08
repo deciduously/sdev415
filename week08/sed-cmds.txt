@@ -1,0 +1,9 @@
+1. sed -i.bak 's/Jon/Jonathan/g' datebook.txt
+2. sed -i.bak -e '1,3d' datebook.txt
+3. sed -n '5,10p' datebook.txt
+4. sed -i.bak '/Lane/d' datebook.txt
+5. sed -rn '/1[12]\/[0-9]{1,2}\/[0-9]{2}/p' datebook.txt
+6. sed -i.bak 's/^Fred.*/&***/' datebook.txt
+7. sed -i.bak 's/.*Jose .*/JOSE HAS RETIRED/' datebook.txt
+8. sed -r -i.bak '/Popeye .*/ s/[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{2}/11\/14\/46/' datebook.txt
+9. sed -r -i.bak '/^\s*$/d' datebook.txt
