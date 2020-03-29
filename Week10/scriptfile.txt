@@ -1,0 +1,171 @@
+Script started on 2020-03-29 12:45:24-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="158" LINES="32"]
+ben@pop-os:~/code/sdev415/Week10$ emacs ~/.bash_profile
+ben@pop-os:~/code/sdev415/Week10$ source ~/.bash_profile
+Hello ben
+ben@pop-os:~/code/sdev415/Week10$ export PS1="\A:$HOME:$PS1"
+12:46:/home/ben:ben@pop-os:~/code/sdev415/Week10$ mkdir wildcards
+12:46:/home/ben:ben@pop-os:~/code/sdev415/Week10$ cd wildcards
+12:47:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ touch ab abc a1 a2 a3 all a12 ba ba.1 ba.2 filex filey AbC ABC ABc3 abc
+12:47:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ la a*
+Unknown argument -A
+12:47:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ ls a*
+a1  a12  a2  a3  ab  abc  all
+12:47:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ ls *[0-9]
+a1  a12  a2  a3  ABc3  ba.1  ba.2
+12:48:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ ls [A,a]*
+a1  a12  a2  a3  ab  abc  AbC  ABC  ABc3  all
+12:48:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ ls *.[0-9]
+ba.1  ba.2
+12:48:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ ls *[x,y]
+filex  filey
+12:48:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ ls *{[0-9],[A-Z],[a-z]}
+a1  a12  a2  a3  ABc3  ba.1  ba.2  AbC  ABC  ab  abc  all  ba  filex  filey
+12:49:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ ls > lsfile
+12:49:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ date >> lsfile
+12:49:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ cat lsfile
+a1
+a2
+a3
+a12
+ab
+AbC
+ABC
+abc
+ABc3
+all
+ba
+ba.1
+ba.2
+filex
+filey
+lsfile
+Sun 29 Mar 2020 12:49:17 PM EDT
+12:49:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ who > lsfile
+12:49:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ cat lsfile
+ben      :1           2020-03-27 07:25 (:1)
+ben      pts/0        2020-03-27 07:25 (:1)
+ben      pts/1        2020-03-29 12:44 (:1)
+12:50:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ find .. 1> found 2> found.errs
+12:50:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ cat found
+..
+../scriptfile.txt
+../new_bash_profile
+../found.errs
+../wildcards
+../wildcards/ba.1
+../wildcards/lsfile
+../wildcards/filex
+../wildcards/found.errts
+../wildcards/filey
+../wildcards/AbC
+../wildcards/a2
+../wildcards/a3
+../wildcards/ABC
+../wildcards/found.errs
+../wildcards/ABc3
+../wildcards/ba
+../wildcards/ab
+../wildcards/ba.2
+../wildcards/all
+../wildcards/abc
+../wildcards/a1
+../wildcards/a12
+../wildcards/found
+../found
+../response.txt
+12:50:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ cat found.errs
+12:50:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ set dogs cats birds fish
+12:50:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ echo $@
+dogs cats birds fish
+12:50:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ echo $#
+4
+12:50:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ echo $3
+birds
+12:51:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ shift $#
+12:51:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ echo $@
+
+12:51:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/pop-os:@/tmp/.ICE-unix/2829,unix/pop-os:/tmp/.ICE-unix/2829
+WINDOWID=62914567
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-plasma:/etc/xdg
+GREP_COLOR=1;33
+HISTCONTROL=ignorespace:erasedups
+HISTSIZE=5000
+LANGUAGE=en_US:en
+BASH_IT=/home/ben/.bash_it
+LC_ADDRESS=en_US.UTF-8
+LC_NAME=en_US.UTF-8
+SSH_AUTH_SOCK=/tmp/ssh-MWzR0m9Q9ZmL/agent.2422
+SHELL_SESSION_ID=8ff3de431b5942ffba178d665ade7278
+DESKTOP_SESSION=plasma
+LC_MONETARY=en_US.UTF-8
+SSH_AGENT_PID=2578
+GTK_MODULES=gail:atk-bridge
+XDG_SEAT=seat0
+PWD=/home/ben/code/sdev415/Week10/wildcards
+LOGNAME=ben
+XDG_SESSION_DESKTOP=plasma
+XDG_SESSION_TYPE=x11
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+SHORT_TERM_LINE=true
+XAUTHORITY=/run/user/1000/gdm/Xauthority
+TODO=t
+WINDOWPATH=2
+VCPROMPT_EXECUTABLE=/home/ben/.vcprompt/bin/vcprompt
+HOME=/home/ben
+USERNAME=ben
+LANG=en_US.UTF-8
+LC_PAPER=en_US.UTF-8
+XDG_CURRENT_DESKTOP=KDE
+KONSOLE_DBUS_SERVICE=:1.2589
+KONSOLE_DBUS_SESSION=/Sessions/1
+PROFILEHOME=
+AUTOFEATURE=true autotest
+KONSOLE_VERSION=190403
+KDE_SESSION_UID=1000
+SHORT_HOSTNAME=pop-os
+SHORT_USER=ben
+XDG_SESSION_CLASS=user
+LC_IDENTIFICATION=en_US.UTF-8
+TERM=xterm-256color
+IRC_CLIENT=irssi
+ASDF_DIR=/home/ben/.asdf
+USER=ben
+COLORFGBG=15;0
+KDE_SESSION_VERSION=5
+BASH_IT_THEME=
+DISPLAY=:1
+SHLVL=2
+BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
+LC_TELEPHONE=en_US.UTF-8
+LC_MEASUREMENT=en_US.UTF-8
+XDG_VTNR=2
+XDG_SESSION_ID=2
+PAPERSIZE=letter
+GS_LIB=/home/ben/.fonts
+XDG_RUNTIME_DIR=/run/user/1000
+PS1=\A:/home/ben:${debian_chroot:+($debian_chroot)}\u@\h:\w\$
+LC_TIME=en_US.UTF-8
+QT_AUTO_SCREEN_SCALE_FACTOR=0
+XCURSOR_THEME=breeze_cursors
+XDG_DATA_DIRS=/usr/share/plasma:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+KDE_FULL_SESSION=true
+PATH=/home/ben/.asdf/shims:/home/ben/.asdf/bin:/home/ben/.cargo/bin:/home/ben/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/cuda/bin:/home/ben/mmixware:/home/ben/mmixware://home/ben
+KONSOLE_PROFILE_NAME=Default
+GDMSESSION=plasma
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+LC_NUMERIC=en_US.UTF-8
+OLDPWD=/home/ben/code/sdev415/Week10
+BASH_IT_RELOAD_LEGACY=1
+KONSOLE_DBUS_WINDOW=/Windows/1
+SCM_CHECK=true
+_=/usr/bin/env
+12:52:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ export CITY=Watertown
+12:52:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ echo $CITY
+Watertown
+12:52:/home/ben:ben@pop-os:~/code/sdev415/Week10/wildcards$ exit
+exit
+
+Script done on 2020-03-29 12:52:39-04:00 [COMMAND_EXIT_CODE="0"]

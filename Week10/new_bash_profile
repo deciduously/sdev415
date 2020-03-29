@@ -1,0 +1,23 @@
+#! /usr/bin/env bash
+
+#2
+echo "Hello $LOGNAME"
+export PATH="$PATH:/$HOME"
+stty erase '^H'
+
+#3
+PS1 = "\A:$HOME:$PS1"
+
+#7
+#a. List all files starting with a.
+ls a*
+#b. List all files ending in at least one digit.
+ls *[0-9]
+#c. List all files starting with a or A
+ls [A,a]*
+#d. List all files ending in a period, followed by a digit.
+ls *.[0-9]
+#e. List files ending in x or y
+ls *[x,y]
+#f. List all files ending in a digit, an uppercase letter, or a lowercase letter.
+ls *{[0-9],[A-Z],[a-z]}

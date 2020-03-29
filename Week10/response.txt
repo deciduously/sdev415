@@ -1,0 +1,23 @@
+1. /etc/profile sets system-wide environment variables for all users.  A user's ~/.bash_profile is sourced afterwards and sets anything user-specific.  Some variables may be duplicated, but .bash_profile will take precedence.
+2. The source command causes the specified file to be executed, therefore re-loading any settings therein in the case of initialization or profile files.
+3. On my machine, it's ${debian_chroot:+($debian_chroot)}\u@\h:\w\$, which renders as ben@pop-os:~$.  My secondary prompt is simply '>', and is used as the continuation prompt when an incomplete command has been entered.
+3-1. export PS1="\A:$HOME:$PS1"
+4.  A program is a a piece of software designed to solve one or more problems for a user.  A process is an internal mechanism within the OS for passing work to and from a program and the computer's hardware.  A program may contain one or more processes.
+5. The `fg` command.
+6. The `jobs` command lists all jobs, `jobs -p`.
+7a. ls a*
+7b. ls *[0-9]
+7c. ls [A,a]*
+7d. ls *.[0-9]
+7e. ls *[x,y]
+7f. ls *{[0-9],[A-Z],[a-z]}
+8a. ls > lsfile
+8b. date >> lsfile
+8c. Redirecting with > will overwrite the target file if already present.
+9. find .. 1> found 2> found.errs
+10. In bash, arguments to a script or a function are assigned positional magic variables like $1, $2, and $3
+10-1. You can use `echo $@` or `echo $*`.  The latter is one long string as opposed to a separate string for each.
+10-2. echo $3
+10-3. echo $#
+10-4. shift $# (or shift N to unset the first N).
+11. An environment variable is a variable available in the current shell.  They can be listed with `env` or `printenv`.  I'd use `export CITY='Watertown';echo $CITY`.
