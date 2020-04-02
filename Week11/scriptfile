@@ -1,0 +1,129 @@
+Script started on 2020-04-02 16:31:53-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="158" LINES="32"]
+ben@pop-os:~/code/sdev415/Week11$ ./nosy.sh
+Please enter your first name: Ben
+Please enter your middle name: David
+Please enter your last name: Lovy
+Hello, Ben!
+Please enter your login name: ben
+Your UID is: 1000
+Your home directory is: /home/ben
+These are the processes you are current running:
+  PID TTY          TIME CMD
+ 2686 ?        00:00:00 systemd
+ 2687 ?        00:00:00 (sd-pam)
+ 2738 tty2     00:00:00 gdm-x-session
+ 2748 ?        00:00:02 dbus-daemon
+ 2751 tty2     00:00:00 startkde
+ 2814 ?        00:00:00 ssh-agent
+ 2845 tty2     00:00:00 start_kdeinit
+ 2847 ?        00:00:00 kdeinit5
+ 2848 ?        00:00:04 klauncher
+ 2852 ?        00:00:17 kded5
+ 2861 ?        00:00:04 kaccess
+ 2873 ?        00:00:02 kglobalaccel5
+ 2878 ?        00:00:00 dconf-service
+ 2885 ?        00:00:02 kscreen_backend
+ 2890 tty2     00:00:00 kwrapper5
+ 2891 ?        00:00:07 ksmserver
+ 2897 ?        00:22:42 kwin_x11
+ 2899 ?        00:00:04 baloo_file
+ 2901 ?        00:00:07 krunner
+ 2903 ?        00:11:02 plasmashell
+ 2907 ?        00:00:03 polkit-kde-auth
+ 2909 ?        00:00:02 xembedsniproxy
+ 2912 ?        00:00:02 gmenudbusmenupr
+ 2916 ?        00:00:08 kdeconnectd
+ 2926 ?        00:06:20 pulseaudio
+ 2928 ?        00:00:03 korgac
+ 2940 ?        00:00:03 kactivitymanage
+ 2959 ?        00:00:00 at-spi-bus-laun
+ 2966 ?        00:00:01 dbus-daemon
+ 2971 ?        00:00:00 agent
+ 2990 ?        00:00:14 io.elementary.a
+ 3002 ?        00:00:05 org_kde_powerde
+ 3013 ?        00:00:00 tracker-miner-f
+ 3042 ?        00:00:00 gvfsd
+ 3064 ?        00:00:00 gvfsd-fuse
+ 3071 ?        00:00:00 gvfs-udisks2-vo
+ 3077 ?        00:00:00 gvfs-mtp-volume
+ 3081 ?        00:00:00 gvfs-gphoto2-vo
+ 3085 ?        00:00:00 gvfs-goa-volume
+ 3089 ?        00:00:00 goa-daemon
+ 3108 ?        00:00:04 goa-identity-se
+ 3113 ?        00:00:00 gvfs-afc-volume
+ 3148 ?        00:00:00 obexd
+ 3152 ?        00:00:00 file.so
+ 3154 ?        00:00:01 xdg-desktop-por
+ 3158 ?        00:00:00 xdg-document-po
+ 3161 ?        00:00:00 xdg-permission-
+ 3172 ?        00:00:03 xdg-desktop-por
+ 3189 ?        00:00:06 at-spi2-registr
+ 3410 ?        00:03:50 code
+ 3441 ?        00:00:13 code
+ 3442 pts/3    00:00:00 bash
+ 3598 ?        00:00:00 code
+ 3838 ?        00:00:02 code
+ 3846 pts/4    00:00:00 bash
+ 4289 ?        00:03:04 firefox
+ 4348 ?        00:00:54 Web Content
+ 4391 ?        00:00:34 WebExtensions
+ 4476 ?        00:00:00 plasma-browser-
+ 4507 ?        00:00:18 Web Content
+ 5077 ?        00:00:17 steamwebhelper
+ 5082 ?        00:05:44 boincmgr
+ 5117 ?        00:02:00 WebKitWebProces
+ 5119 ?        00:00:00 WebKitNetworkPr
+ 5611 ?        00:00:00 gvfsd-http
+ 5664 ?        00:00:13 Web Content
+ 7078 ?        00:00:00 gvfsd-metadata
+ 7571 ?        00:00:05 Web Content
+ 7812 ?        00:00:11 Web Content
+ 9024 ?        00:00:11 Web Content
+ 9188 ?        00:00:00 file.so
+ 9401 ?        00:00:03 Web Content
+ 9848 ?        00:00:00 tags.so
+ 9850 ?        00:00:00 tags.so
+11949 ?        00:00:00 xsel
+12574 ?        00:00:00 konsole
+12578 pts/1    00:00:00 bash
+12900 pts/1    00:00:00 script
+12901 pts/2    00:00:00 bash
+13213 pts/2    00:00:00 bash
+13218 pts/2    00:00:00 ps
+13680 ?        00:01:41 code
+13683 ?        00:00:00 code
+13706 ?        00:04:21 code
+13719 ?        00:00:01 code
+14093 ?        00:00:16 code
+14518 ?        00:00:00 gnome-keyring-d
+14721 ?        00:00:02 baloorunner
+14800 ?        00:00:02 kwalletd5
+15481 ?        00:00:00 sh
+15482 ?        00:00:15 vsls-agent
+16369 ?        00:00:01 gpg-agent
+24836 ?        00:00:00 steam
+24841 ?        00:00:00 bash
+24986 ?        00:15:20 steam
+24995 ?        00:00:00 steam
+24996 ?        00:00:00 sh
+24997 ?        00:00:00 steamwebhelper.
+25000 ?        00:00:43 steamwebhelper
+25002 ?        00:00:00 steamwebhelper
+25022 ?        00:03:35 steamwebhelper
+25049 ?        00:00:04 steamwebhelper
+25114 ?        00:00:03 steamwebhelper
+25123 ?        00:00:23 steamwebhelper
+The day of the week is Thursday and the current time is 04:32:09 PM.
+ben@pop-os:~/code/sdev415/Week11$ ./checking.sh be
+Looking for be...
+No such user on our system.
+ben@pop-os:~/code/sdev415/Week11$ ./checking.sh benj
+Looking for benj...
+No such user on our system.
+ben@pop-os:~/code/sdev415/Week11$ ./checking.sh ben
+Looking for ben...
+Found ben in the /etc/passwd file.
+ben@pop-os:~/code/sdev415/Week11$ exit
+exit
+
+Script done on 2020-04-02 16:32:37-04:00 [COMMAND_EXIT_CODE="0"]
