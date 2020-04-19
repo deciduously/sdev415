@@ -1,0 +1,30 @@
+Script started on 2020-04-19 10:37:10-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="158" LINES="32"]
+ben@pop-os:~/code/sdev415/Week13$ ./mchecker.sh
+ben, you have new mail!
+ben, you have new mail!
+^Cben@pop-os:~/code/sdev415/Week13$ ./foods.sh
+1) Steak and potatoes
+2) Fish and chips
+3) Soup and salad
+Please make a selection. 1
+Stick to your ribs
+Watch your cholesterol.
+Enjoy your meal.
+Please make a selection. 2
+British are coming!
+Enjoy your meal.
+Please make a selection. 3
+Health foods...
+Dieting is so boring.
+Enjoy your meal.
+Please make a selection. ^Cben@pop-os:~/code/sdev415/Week13$ ./add.sh
+Usage: ./add.sh operandOne operandTwo
+ben@pop-os:~/code/sdev415/Week13$ ./add.sh 4 5 6
+Usage: ./add.sh operandOne operandTwo
+ben@pop-os:~/code/sdev415/Week13$ ./add.sh 5 8
+The sum is 13.
+ben@pop-os:~/code/sdev415/Week13$ ^C
+ben@pop-os:~/code/sdev415/Week13$ exit
+exit
+
+Script done on 2020-04-19 10:38:05-04:00 [COMMAND_EXIT_CODE="130"]
