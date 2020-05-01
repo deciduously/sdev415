@@ -42,7 +42,7 @@ function add_user {
 
     # Sort and find which number the entry was
     sort_by_last $data
-    grep -Fn $s $data
+    grep -Fn "$s" $data
 }
 
 function sort_and_display {

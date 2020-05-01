@@ -1,0 +1,69 @@
+Script started on 2020-05-01 14:06:51-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="125" LINES="32"]
+ben@pop-os:~/code/sdev415/final$ ./lookup-1.sh
+Someone:Else:0118-999-881-99-91-9725-3:Next Door, Your Town ST, 00001:02/12/1202:50
+First:Last:012-345-6789:10101 Your Computer Lane, Inside Your Computer, CM, 10101:01/01/1970:0
+Ben:Lovy:978-729-4915:37 Capitol St, Apt #1, Watertown MA 02472:01/24/1992:10000000
+Fourth:Person:929-202-2034:The Ocean, Earth:01/01/0001:123
+Total entries: 4
+ben@pop-os:~/code/sdev415/final$ ./lookup-2.sh
+Datafile:
+Someone:Else:0118-999-881-99-91-9725-3:Next Door, Your Town ST, 00001:02/12/1202:50
+First:Last:012-345-6789:10101 Your Computer Lane, Inside Your Computer, CM, 10101:01/01/1970:0
+Ben:Lovy:978-729-4915:37 Capitol St, Apt #1, Watertown MA 02472:01/24/1992:10000000
+Fourth:Person:929-202-2034:The Ocean, Earth:01/01/0001:123
+Total entries: 4
+
+Add new user
+
+Enter first name: Test
+Enter last name: One
+Enter phone number: 111-22-3333
+Enter address: 10 Downing St
+Enter birthday: 01/01/1970
+Enter salary: 20000
+Success!  Added new entry for Test One.
+4:Test:One:111-22-3333:10 Downing St:01/01/1970:20000
+ben@pop-os:~/code/sdev415/final$ ./lookup-3.sh
+Datafile:
+Someone:Else:0118-999-881-99-91-9725-3:Next Door, Your Town ST, 00001:02/12/1202:50
+First:Last:012-345-6789:10101 Your Computer Lane, Inside Your Computer, CM, 10101:01/01/1970:0
+Ben:Lovy:978-729-4915:37 Capitol St, Apt #1, Watertown MA 02472:01/24/1992:10000000
+Test:One:111-22-3333:10 Downing St:01/01/1970:20000
+Fourth:Person:929-202-2034:The Ocean, Earth:01/01/0001:123
+Total entries: 5
+
+1) add
+2) delete
+3) view
+4) quit
+Enter your choice> 2
+Enter first name: Test
+Enter last name: One
+Deleting...
+Enter your choice> 3
+Enter first name: Test
+Invalid entry, try again
+Enter your choice> 3
+Enter first name: Ben
+Enter last name: Lovy
+Ben:Lovy:978-729-4915:37 Capitol St, Apt #1, Watertown MA 02472:01/24/1992:10000000
+Enter your choice> 1
+Add new user
+
+Enter first name: Test
+Enter last name: User
+Enter phone number: 111-222-3333
+Enter address: 1600 Pennsylvania
+Enter birthday: 01/01/1070
+Enter salary: 20000
+Success!  Added new entry for Test User.
+5:Test:User:111-222-3333:1600 Pennsylvania:01/01/1070:20000
+Enter your choice> 3
+Enter first name: Test
+Enter last name: User
+Test:User:111-222-3333:1600 Pennsylvania:01/01/1070:20000
+Enter your choice> 4
+ben@pop-os:~/code/sdev415/final$ exit
+exit
+
+Script done on 2020-05-01 14:08:17-04:00 [COMMAND_EXIT_CODE="0"]
